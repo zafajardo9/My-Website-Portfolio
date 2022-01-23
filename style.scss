@@ -497,27 +497,31 @@ button {
 }
 
 .s4 {
-  position: relative;
-  margin: 0 auto;
+  //position: relative;
+  //margin: 0 auto;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  //min-height: 100vh;
   display: flex;
 
   .wrap {
-
+    margin: 0px auto;
+    
     position: relative;
-    min-width: 1100px;
-    min-height: 550px;
+    width: 80%;
+    // min-width: 1100px;
+    min-height: 90vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1000;
 
 
     .contact-left {
-      position: absolute;
-      width: 350px;
+      position: relative;
+      width: 50%;
       height: calc(100% - 40px);
-      top: 40px;
+      top: 2px;
       background-color: var(--background-dark);
       padding: var(--spacing-l);
       display:flex;
@@ -529,17 +533,30 @@ button {
 
       h1 {
         font-weight: 600;
-        font-size: 1.5em;
+        font-size: 4em;
         color: var(--white);
+      }
+
+      .info {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        a {
+          text-decoration: none;
+          font-size: 2.5em;
+          color: var(--white);
+          &:hover {
+            color: var(--fourth);
+          }
+        }
       }
     }
   
     .contact-right {
-      position: absolute;
+      position: relative;
       background-color: var(--white);
-      margin-left: 150px;
-      padding-left: 250px;
-      width: calc(100% - 150px);
+
+      width: calc(70% - 150px);
       height: 100%;
   
       .contact {
