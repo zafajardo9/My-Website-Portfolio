@@ -101,7 +101,7 @@ function ajax(method, url, data, success, error) {
 // CURSOR
 
 let mouseCursor = document.querySelector(".cursor");
-//let navLinks = document.querySelectorAll(".nav-links li");
+let content = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p, .card, .fab ");
 
 
 window.addEventListener('mousemove', cursor);
@@ -110,3 +110,33 @@ function cursor(e) {
   mouseCursor.style.top = e.pageY + 'px';
   mouseCursor.style.left = e.pageX + 'px';
 }
+
+content.forEach(link=>{
+  link.addEventListener('mouseover', ()=>{
+    mouseCursor.classList.add('link-grow');
+  });
+
+  link.addEventListener('mouseleave', ()=>{
+    mouseCursor.classList.remove('link-grow');
+  })
+
+});
+
+
+//ANIMATION PART
+var tl = gsap.timeline({defaults: {duration: 1.5}});
+
+
+tl.from("h1", {stagger: .6, opacity: 0, y: -100})
+  .from("h2", {stagger: .6, opacity: 0, y: -100})
+
+  
+//TEXT
+    TweenMax.from(".contact-left", 1.5, {
+      delay: 1,
+      y: "100%",
+      ease: Expo.easeInOut
+    });
+
+
+
