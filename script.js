@@ -123,20 +123,23 @@ content.forEach(link=>{
 });
 
 
-//ANIMATION PART
-var tl = gsap.timeline({defaults: {duration: 1.5}});
+//INTRO BOIL
+const textIntro = document.getElementById("textIntro");
 
 
-tl.from("h1", {stagger: .6, opacity: 0, y: -100})
-  .from("h2", {stagger: .6, opacity: 0, y: -100})
 
-  
-//TEXT
-    TweenMax.from(".contact-left", 1.5, {
-      delay: 1,
-      y: "100%",
-      ease: Expo.easeInOut
-    });
+const tl = new TimelineLite();
+tl.set("#hide", {color: "#fffee", fontSize: "5rem"}, 1.5)
+.to("#hide",1,{color: "#2d3548", fontSize: "3rem", stagger: 0.3, x: "300"});
+
+
+tl.to(".slider",{y: "-100%", backgroundColor: "#1d2d50", duration:1.5, delay: 0.5});
+
+tl.to(textIntro,{y: "-100%", backgroundColor: "#000"}, "-=1");
+tl.fromTo(".side-text",{opacity: 0},{opacity: 1, duration: 1});
+tl.fromTo(".skillBar",{opacity: 0, x: "-500%"},{opacity: 1, duration: 1, x: "0%"});
+//End of
+
 
 
 
