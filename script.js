@@ -141,5 +141,3 @@ tl.fromTo(".skillBar",{opacity: 0, x: "-500%"},{opacity: 1, duration: 1, x: "0%"
 //End of
 
 
-
-
