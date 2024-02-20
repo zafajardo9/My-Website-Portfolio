@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Home</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+      crossorigin="anonymous"
+      async preload>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css" 
+      integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer"
+      async preload />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body data-barba="wrapper">
@@ -20,9 +28,14 @@
             <div class="leftside-content">
 
                 <div class="side-text">
+                    <img class="profile-image" src="https://ik.imagekit.io/23umzxu6uw/blob%202.png?updatedAt=1706793628955" alt="">
                     <h1>Zackery Alline <br> Fajardo</h1>
 
-                    <button>Resume <i class="far fa-arrow-alt-circle-right"></i></button>
+                    <a href="https://ik.imagekit.io/23umzxu6uw/Fajardo-Resume%202.pdf?updatedAt=1708433975175" target="_blank">
+
+                      <button>CV Download <i class="far fa-arrow-alt-circle-right"></i></button>
+
+                    </a>
                 </div>
 
             </div>
@@ -51,10 +64,10 @@
                     </div>
                   </li>
                   <a class="card" href="#">
-                    <div class="card__background" style="background-image: url(./asset/4.avif)"></div>
+                    <!-- <div class="card__background" style="background-image: url(./asset/4.avif)"></div> -->
                     <div class="card__content">
-                      <p class="card__category">Category</p>
-                      <h3 class="card__heading">Other Things</h3>
+                      <p class="card__category">Thanks For viewing my Portfolio</p>
+                      <h3 class="card__heading">Will be updating this</h3>
                     </div>
                   </a>
             </div>        
@@ -66,55 +79,61 @@
           <div class="contentContainer">
             <div class="skill-intro">
               <h1>Hi! I am Zack</h1>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, nam?</p>
+              <p>These are the frameworks/technologies I used</p>
             </div>
-            <div class="skillBar">
-              <h4>HTML</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-90"></div>
-              </div>
-            </div>
-          
-            <div class="skillBar">
-              <h4>CSS3</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-80"></div>
-              </div>
-            </div>
-            
-            <div class="skillBar">
-              <h4>SASS</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-90"></div>
-              </div>
-            </div>
-          
-            <div class="skillBar">
-              <h4>jQuery</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-70"></div>
-              </div>
-            </div>
-            
-            <div class="skillBar">
-              <h4>JavaScript</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-20"></div>
-              </div>
-            </div>
-          
-            <div class="skillBar">
-              <h4>PHP</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-40"></div>
-              </div>
-            </div>
-            
-            <div class="skillBar">
-              <h4>WordPress</h4>
-              <div class="skillBarContainer">
-                <div class="skillBarValue value-80"></div>
-              </div>
+            <div class="tech-container">
+                <div class="card-container">
+                  <div class="card-image-container">
+                    <img src="./asset/tech/1.png" alt="" srcset="">
+                  </div>
+                  <div class="techname">
+                    <p>NextJS</p>
+                  </div>
+                </div>
+
+
+                <div class="card-container">
+                  <div class="card-image-container">
+                    <img src="./asset/tech/2.png" alt="" srcset="">
+                  </div>
+                  <div class="techname">
+                    <p>Python</p>
+                  </div>
+                </div>
+
+                <div class="card-container">
+                  <div class="card-image-container">
+                    <img src="./asset/tech/3.png" alt="" srcset="">
+                  </div>
+                  <div class="techname">
+                    <p>Flutter</p>
+                  </div>
+                </div>
+                <div class="card-container">
+                  <div class="card-image-container">
+                    <img src="./asset/tech/4.png" alt="" srcset="">
+                  </div>
+                  <div class="techname">
+                    <p>PostreSQL</p>
+                  </div>
+                </div>
+                <div class="card-container">
+                  <div class="card-image-container">
+                    <img src="./asset/tech/5.png" alt="" srcset="">
+                  </div>
+                  <div class="techname">
+                    <p>MongoDB</p>
+                  </div>
+                </div>
+                <div class="card-container">
+                  <div class="card-image-container">
+                    <img src="./asset/tech/6.png" alt="" srcset="">
+                  </div>
+                  <div class="techname">
+                    <p>React</p>
+                  </div>
+                </div>
+              <!-- END -->
             </div>
           
           </div>
@@ -141,21 +160,36 @@
               <div class="carousel-item__image"></div>
               <div class="carousel-item__info">
                 <div class="carousel-item__container">
-                <h2 class="carousel-item__subtitle">Subname</h2>
-                <h1 class="carousel-item__title">Name ng Project</h1>
-                <p class="carousel-item__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit repellat omnis ipsa quisquam corrupti amet?</p>
-                <a href="./pages/first.html" class="carousel-item__btn">Explore the Project</a>
+                <h2 class="carousel-item__subtitle">Capstone</h2>
+                <h1 class="carousel-item__title">PUP-RIS</h1>
+                
+                <p class="carousel-item__description">
+                  The PUP-RIS stands as a testament to the commitment of the 
+                  Polytechnic University of the Philippines 
+                  to advance research initiatives.
+
+                </p>
+                
+                
+                <a href="https://pupris.onrender.com" class="carousel-item__btn">Explore the Project</a>
                   </div>
-              </div>
+                </div>
             </div>
+
+
             <div class="carousel-item carousel-item--2">
               <div class="carousel-item__image"></div>
               <div class="carousel-item__info">
                 <div class="carousel-item__container">
-                  <h2 class="carousel-item__subtitle">Subname</h2>
-                  <h1 class="carousel-item__title">Name ng Project</h1>
-                  <p class="carousel-item__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit repellat omnis ipsa quisquam corrupti amet?</p>
-                  <a href="#" class="carousel-item__btn">Explore the Project</a>
+                  <h2 class="carousel-item__subtitle">Thesis</h2>
+                  <h1 class="carousel-item__title">BudgetBud</h1>
+                  <p class="carousel-item__description">
+                    Your buddy for saving. This mobile app partnered with 
+                    Machine Learning Algorithm will help you track and give 
+                    recommendations and alerts for you based on your expenses and incomes
+
+                  </p>
+                  <a href="https://budgetbud.netlify.app/" class="carousel-item__btn">Explore the Project</a>
                   </div>
               </div>
             </div>
@@ -163,10 +197,13 @@
               <div class="carousel-item__image"></div>
               <div class="carousel-item__info">
                 <div class="carousel-item__container">
-                  <h2 class="carousel-item__subtitle">Subname</h2>
-                  <h1 class="carousel-item__title">Name ng Project</h1>
-                  <p class="carousel-item__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit repellat omnis ipsa quisquam corrupti amet?</p>
-                  <a href="#" class="carousel-item__btn">Explore the Project</a>
+                  <h2 class="carousel-item__subtitle">Mini Project</h2>
+                  <h1 class="carousel-item__title">Path Finding Algorithm Visualizer</h1>
+                  <p class="carousel-item__description">
+                    Visualizer for different Path Finding Algorithms.
+
+                  </p>
+                  <a href="https://github.com/zafajardo9/path-finder" class="carousel-item__btn">Explore the Project</a>
                   </div>
               </div>
             </div>
@@ -175,31 +212,23 @@
               <div class="carousel-item__image"></div>
               <div class="carousel-item__info">
                 <div class="carousel-item__container">
-                  <h2 class="carousel-item__subtitle">Subname</h2>
-                  <h1 class="carousel-item__title">Name ng Project</h1>
-                  <p class="carousel-item__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit repellat omnis ipsa quisquam corrupti amet?</p>
-                  <a href="#" class="carousel-item__btn">Explore the Project</a>
+                  <h2 class="carousel-item__subtitle">Mini Project</h2>
+                  <h1 class="carousel-item__title">Car Rental System</h1>
+                  <p class="carousel-item__description">
+                    A Car Rental Website assignments in our Programming Subject.
+                    This displays our skills of user authentication to user buying or renting a car
+                  </p>
+                  <a href="https://github.com/zafajardo9/eCommerce_CarRental" class="carousel-item__btn">Explore the Project</a>
                   </div>
               </div>
             </div>
             
-           <div class="carousel-item carousel-item--5">
-              <div class="carousel-item__image"></div>
-              <div class="carousel-item__info">
-                <div class="carousel-item__container">
-                  <h2 class="carousel-item__subtitle">Subname</h2>
-                  <h1 class="carousel-item__title">Name ng Project</h1>
-                  <p class="carousel-item__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit repellat omnis ipsa quisquam corrupti amet?</p>
-                <a href="#" class="carousel-item__btn">Explore the Project</a>
-                  </div>
-              </div>
-            </div>
             
           </div>
 
           <div class="carousel-rightside">
             <h1>So Hello I am Zack!</h1>
-            <p>These are the works I have done for Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, qui!</p>
+            <p>These are the mini projects I have done. for the past years</p>
           </div>
         </div>
 
@@ -209,70 +238,23 @@
             <div class="contact-left">
               <h1>Wanna <br>be starting </br> something?</h1>
               <div class="info">
-
-
                   <a href="https://www.facebook.com/zafajardo/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-
-
-
                   <a href="https://twitter.com/ItZucks" target="_blank"><i class="fab fa-twitter"></i></a>
-
-
-
                   <a href="https://www.linkedin.com/in/zackery-alline-fajardo-642755126/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-
                   <a href="https://www.instagram.com/zahiroshi/" target="_blank"><i class="fab fa-github"></i></a>
-
                   <a href="https://www.instagram.com/zahiroshi/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  
-
                   <a href="https://dribbble.com/zafajardo" target="_blank"><i class="fab fa-dribbble"></i></a>
-
-
               </div>
             </div>
-            <div class="center"><div class="center-content">OR</div></div>
-
+            <div class="center"><div class="center-content">ME</div></div>
             <div class="contact-right">
-
-
               <div class="contact">
-                
-                
-                <form action="https://formspree.io/f/mgedodlq" method="POST" id="my-form">
-                  
-                  <div class="form-group">
-                    <p>I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.</p>
-                  </div>
-                  
-                  <div class="form-group">
-                    <!-- <label for="firstName"> First Name</label> -->
-                    <input type="text" id="firstName" name="firstName" placeholder="First Name">
-                  </div>
-                  
-                  <div class="form-group">
-                    <!-- <label for="latsName">Last Name</label> -->
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name">
-                  </div>
-
-                  <div class="form-group">
-                    <!-- <label for="email">Email</label> -->
-                    <input type="email" id="email" name="email" placeholder="Email">
-                  </div>
-            
-                  <div class="form-group">
-                    <!-- <label for="massage">Message</label> -->
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message"></textarea>
-                  </div>
-
-
-                    <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
-                  </form>
-
-
-                  <div id="status"></div>
+                <!-- <img src="./asset/zack.jpg" class="img-me-last"> -->
+                <img src="https://ik.imagekit.io/23umzxu6uw/blob%205.png?updatedAt=1706793633565" class="img-me-last">
               </div>
+
+              
+
             </div>
           </div>
           </div>
@@ -304,18 +286,32 @@
 <!-- SCRIPTS -->
 
 <!-- GSAP -->
-  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js" integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+    async preload></script>
+  <!-- <script src='https://unpkg.co/gsap@3/dist/gsap.min.js' 
+    async preload></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" 
+    crossorigin="anonymous"
+    async preload></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" 
+    integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+    async preload></script>
+
     
   <!-- OTHER -->
   <script src="https://unpkg.com/@barba/core"></script>
-  <script src="./fullpage/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./fullpage/fullpage.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
   <!-- three js -->./
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
-    integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+    integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous" async preload></script>
   <!-- hover-effect js -->
   <script src="./hover-effect.umd.js"></script>
   

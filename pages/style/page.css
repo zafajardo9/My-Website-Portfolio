@@ -22,8 +22,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ::-moz-selection {
@@ -38,7 +37,7 @@
 
 body {
   overflow: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -60,8 +59,7 @@ ul {
 }
 
 li {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   padding: var(--spacing-xl);
 }
 
@@ -79,74 +77,46 @@ nav {
   left: 0;
   width: 100%;
   height: 6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: var(--spacing-xl);
   font-size: 1.3rem;
 }
-
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   list-style: none;
 }
-
 nav ul li {
   width: 40px;
   height: 40px;
   margin-left: 1rem;
   border-radius: 50%;
   background-color: var(--background-dark);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 nav ul li a {
   color: var(--white);
 }
-
 nav a {
   color: var(--black);
   text-decoration: none;
 }
 
 .df {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .aic {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .jcc {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .loader {
@@ -164,15 +134,9 @@ nav a {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 90vh;
 }
 
@@ -188,5 +152,4 @@ nav a {
   font-size: 5rem;
   line-height: 1;
   font-weight: 400;
-}
-/*# sourceMappingURL=page.css.map */
+}/*# sourceMappingURL=page.css.map */
